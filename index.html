@@ -4,6 +4,8 @@
     <title>Defias Dev</title>
     <meta name="description" content="A World of Warcraft modding podcast">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#e20031" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#30383d" />
 
     <!-- Facebook Meta Tags -->
     <meta property="og:url" content="http://www.defias.dev">
@@ -24,13 +26,14 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
     <style>
 
-      @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Fondamento&family=Rakkas&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Fondamento&family=Rakkas&display=swap');
       @import url('https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css');
 
       html {
-        background-color: e6e6e6;
+        background-color: #d3dee2;
+        color: #30383d;
         text-align: center;
-        font-family: 'DM Serif Text', serif;
+        font-family: 'Fondamento', cursive;
       }
 
       h1 {
@@ -57,24 +60,32 @@
         font-size: 1.25em;
       }
 
-      a:link {
+      a:link, a:visited {
         text-decoration: none;
         color: #00436d;
       }
 
-      a:visited {
-        text-decoration: none;
-        color: #00436d;
-      }
-
-      a:hover {
+      a:hover, a:active {
         text-decoration: none;
         color: #e20031;
       }
 
-      a:active {
-        text-decoration: none;
-        color: #e20031;
+      @media (prefers-color-scheme: dark) {
+        html {
+          background-color: #30383d;
+          color: #d3dee2;
+        }
+
+        a:link, a:visited {
+          text-decoration: none;
+          color: #e20031;
+        }
+
+        a:hover, a:active {
+          text-decoration: none;
+          color: white;
+        }
+
       }
 
     </style>
